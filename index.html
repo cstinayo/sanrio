@@ -17,7 +17,7 @@
             grid-gap:1em 3em;
             grid-template-rows: 400px 500px 100px;
             grid-template-columns: 500px 500px; 
-
+            place-self: center;
         }
 
         .item-2{
@@ -45,12 +45,15 @@
             grid-column: span 2;
         }
         .item-5{
-                        
+               /*maybe have this fixed somehow*/         
             background-color:green;
             font-size:40px;
             text-align:center;
             grid-row: 3;
             grid-column: span 2;
+            z-index:1;
+            /* span property, or use grid-area:row-start / col-start / row end / col-end;*/
+            /* can also have z index*/
         }
 
 
